@@ -1,36 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estate</title>
-    <link  rel= "значок ярлыка"  href= "./LOGO.svg"  type= "image/x-icon" > 
-<link  rel= "icon"  href= "./LOGO.svg"  type= "image/x-icon" >
-</head>
-<body>
+    <link rel="значок ярлыка" href="./LOGO.svg" type="image/x-icon" />
+    <link rel="icon" href="./LOGO.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.min.css">
+  </head>
+  <body>
     <header>
-<img src="./LOGO.svg" alt="logo">
-<ul>
-    <li>
-        <a href="#">listing</a>
-    </li>
-       <li>
-        <a href="#">Newsroom</a>
-       </li>
-    <li>
-        <a href="#">Contact</a>
-    </li>
-        <li>
-            <a href="#">Our team</a>
-        </li>
-</ul>
+      <div class="container">
+        <nav class="menu">
+          <img src="./img/LOGO.svg" alt="logo" />
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">listing</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Newsroom</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Our team</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-        <section>
-            <img src="./img/BG.png" alt="">
-            <img src="./img/arrow.svg" alt="">
-        </section>
+      <section class="hero">
+        <div class="hero__bg">
+          <div class="hero__wrapper">
+            <img class="hero__logo" src="./img/bg-logo.svg" alt="logo" />
+            <h1 class="hero__title">We're here to help you find a new home.</h1>
+          </div>
+
+          <a class="hero__circle" href="#">
+            <img src="./img/arrow.png" alt="" />
+          </a>
+        </div>
+      </section>
+
+      <section class="listings">
+        <div class="container">
+          <div class="listings__wrapper">
+            <h2 class="title-orange">Our requirements</h2>
+
+            <h3 class="listings__title title">How we choose our listings.</h3>
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              scelerisque aliquam odio et faucibus.
+            </p>
+          </div>
+
+          <div class="listings__boks">
+            <img src="./img/listings.1.png" alt="" />
+            <ul class="listings__list">
+              <li class="listings__item">
+                <img class="listing__icon" src="" alt="">
+                <h2 class="listing__subtitle"></h2>
+                
+                <p class="listing__text"></p>
+
+              </li>
+              <li class="listings__item"></li>
+              <li class="listings__item"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
-    
-</body>
+  </body>
 </html>
